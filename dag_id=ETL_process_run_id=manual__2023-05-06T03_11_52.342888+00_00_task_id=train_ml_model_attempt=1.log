@@ -1,0 +1,18 @@
+c02zl0salvdm.lan
+*** Found local files:
+***   * /Users/psingh02/airflow/logs/dag_id=ETL_process/run_id=manual__2023-05-06T03:11:52.342888+00:00/task_id=train_ml_model/attempt=1.log
+[2023-05-05T23:17:17.381-0400] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_process.train_ml_model manual__2023-05-06T03:11:52.342888+00:00 [queued]>
+[2023-05-05T23:17:17.383-0400] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_process.train_ml_model manual__2023-05-06T03:11:52.342888+00:00 [queued]>
+[2023-05-05T23:17:17.383-0400] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-05T23:17:17.387-0400] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): train_ml_model> on 2023-05-06 03:11:52.342888+00:00
+[2023-05-05T23:17:17.390-0400] {standard_task_runner.py:57} INFO - Started process 34754 to run task
+[2023-05-05T23:17:17.393-0400] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_process', 'train_ml_model', 'manual__2023-05-06T03:11:52.342888+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/data_engineer_sample.py', '--cfg-path', '/var/folders/73/mh8wnr3x3ps07jk6kk9cpp4r0000gp/T/tmpeb78sl0c']
+[2023-05-05T23:17:17.395-0400] {standard_task_runner.py:85} INFO - Job 21: Subtask train_ml_model
+[2023-05-05T23:17:17.415-0400] {task_command.py:410} INFO - Running <TaskInstance: ETL_process.train_ml_model manual__2023-05-06T03:11:52.342888+00:00 [running]> on host c02zl0salvdm.lan
+[2023-05-05T23:17:17.434-0400] {taskinstance.py:1568} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Prateek' AIRFLOW_CTX_DAG_ID='ETL_process' AIRFLOW_CTX_TASK_ID='train_ml_model' AIRFLOW_CTX_EXECUTION_DATE='2023-05-06T03:11:52.342888+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-06T03:11:52.342888+00:00'
+[2023-05-05T23:18:11.131-0400] {data_engineer_sample.py:93} INFO - Mean Absolute Error: 1131379.3945572209, Mean Squared Error: 37213325928343.04
+[2023-05-05T23:18:12.518-0400] {data_engineer_sample.py:95} INFO - Model saved
+[2023-05-05T23:18:12.902-0400] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-05T23:18:12.910-0400] {taskinstance.py:1368} INFO - Marking task as SUCCESS. dag_id=ETL_process, task_id=train_ml_model, execution_date=20230506T031152, start_date=20230506T031717, end_date=20230506T031812
+[2023-05-05T23:18:13.017-0400] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-05T23:18:13.023-0400] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

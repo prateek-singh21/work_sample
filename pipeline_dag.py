@@ -119,7 +119,7 @@ with DAG(dag_id="ETL_process",
 
         feat_engineering_task = PythonOperator(
                task_id = "feature_engineer_dataset",
-               python_callable = read_and_save,
+               python_callable = feature_engineering,
                dag = dag
         )
 
